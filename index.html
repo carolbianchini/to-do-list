@@ -10,16 +10,14 @@
 
 <body>
  <h1>To-do List</h1>
-    <div class="content">
-        <div class="content-add-item">
-            <input type="text" class="input-list" placeholder="digite sua tarefa aqui">
-            <button onclick="adicionar()" class="add-task"><img src="images/plus-lg.svg" alt="add-list" title="click aqui para adicionar uma tarefa"></button>
-        </div>
-    
-    <div class="to-do-list">
+    <form>
+        <input type="text" class="input-list" placeholder="digite sua tarefa aqui" id="input-list">
+        <button class="add-task"><img src="images/plus-lg.svg" alt="add-list" title="click aqui para adicionar uma tarefa"></button>
+    </form>
+
     <ul id="list"></ul>
-    </div>
-</div> 
+
+
 <script src="JS/script.js"></script>
 </body>
 </html>
