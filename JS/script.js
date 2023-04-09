@@ -1,7 +1,8 @@
 
 const input = document.querySelector('form')
 const list = document.querySelector('#list')
-const inputList = document.querySelector("#input-list");
+const inputList = document.querySelector("#input-list")
+const addBtn = document.querySelector(".add-task")
 
 function addTask (task) {
     const listItem = document.createElement('li');
@@ -9,17 +10,16 @@ function addTask (task) {
     list.appendChild(listItem);
 }
 
-if(inputList === ''){
-    alert('Digite algo para inserir em sua lista')
-  } else{
-    input.addEventListener('submit', (event) =>{
-        event.preventDefault();
+addBtn.addEventListener('click', (e)=> {
+    if (inputList.value == ''){
+        alert("digite algo")
+    }else {e.preventDefault()
         const inputList = document.querySelector("#input-list");
         task = inputList.value;
         addTask(task);
-        inputList.value = ""
-     })
-}
+        inputList.value = ''
+    }
+})
 
 
 list.addEventListener('click', (event)=>{
@@ -28,9 +28,3 @@ list.addEventListener('click', (event)=>{
         list.removeChild(listItem);
     }
 })
-
-
-/*const inputList = document.querySelector("#input-list");
-if(!list.value){
-    alert('Digite algo para inserir em sua lista')
-}*/
