@@ -1,55 +1,37 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: auto;
+    height: 400px;
+    
 }
 
 .content{
     display: flex;
     flex-direction: column;
-}
-
-#removebtn {
-    background: red;
-}
-
-#ok {
-    background: rebeccapurple;
-}
-
-.to-do-list li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.to-do-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    border: solid black;
+    flex-wrap: wrap;
+    width: 350px;
+    
+    
 }
 
-.to-do-list button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    gap: 33rem;
+header {
+    background-color: red;
+    width: 350px;
+    border: solid black;
 }
 
-input[type="checkbox" i] {
-    background-color: green;
-    cursor: pointer;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 13px 3px 3px 4px;
-    padding: initial;
-    border: initial;
+input[type="checkbox" i]:checked {
+
+    text-decoration: underline;
 }
 li {
     list-style: none;
 }
+
 
 
