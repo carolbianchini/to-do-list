@@ -24,7 +24,7 @@ setInterval(refreshTime, 1000);
 
 function addTask (task) {
     const listItem = document.createElement('li');
-    listItem.innerHTML = `<input type="checkbox" class="ba" /><span>${task}</span><button>Delete</button>`
+    listItem.innerHTML = `<input type="checkbox" /><span>${task}</span><button class="btn"></button>`
     list.appendChild(listItem);
 }
 
@@ -40,8 +40,9 @@ addBtn.addEventListener('click', (e)=> {
 })
 
 list.addEventListener('click', (event)=>{
-    if(event.target.tagName === 'BUTTON'){
+    if(event.target.className === 'btn'){
         const listItem = event.target.parentElement
         list.removeChild(listItem);
     }
 })
+
