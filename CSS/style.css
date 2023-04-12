@@ -4,17 +4,17 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
-    gap: 2rem;
-    height: 80vh;
+    height: auto;
     background-color: #EEEEEE;
 }
 
 header {
     background: linear-gradient(110deg,#6867AC, #A267AC 40%, #CE7BB0,#FFBCD1);
-    width: 350px;
+    width: 400px;
     height: 10rem;
     border-radius: 8px;
     box-shadow: 10px 10px 15px 6px #d0d0d6;
+    margin: 60px auto;
 }
 
 h1 {
@@ -59,6 +59,7 @@ input::placeholder {
     align-items: center;
     background: linear-gradient(-110deg,#6867AC, #A267AC, #CE7BB0 50%,#FFBCD1);
     box-shadow: 10px 10px 15px 6px #d0d0d6;
+    margin: 0 0 20px;
 }
 
 .add-task {
@@ -86,6 +87,7 @@ ul li {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 400px;
 }
 
 #span {
@@ -125,9 +127,13 @@ ul button {
         margin: 0 5px;
 }
 
+header {
+    width: 100%;
+}
+
 ul li {
-    width: 300px;
-    margin: 20px;
+    width: 350px;
+    margin:  0 20px;
 }
 }
 
