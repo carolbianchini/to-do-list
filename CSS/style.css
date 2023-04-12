@@ -14,6 +14,7 @@ header {
     width: 350px;
     height: 10rem;
     border-radius: 8px;
+    box-shadow: 10px 10px 15px 6px #d0d0d6;
 }
 
 h1 {
@@ -57,6 +58,7 @@ input::placeholder {
     padding: 1rem;
     align-items: center;
     background: linear-gradient(-110deg,#6867AC, #A267AC, #CE7BB0 50%,#FFBCD1);
+    box-shadow: 10px 10px 15px 6px #d0d0d6;
 }
 
 .add-task {
@@ -66,6 +68,7 @@ input::placeholder {
     height: 50px;
     border-radius: 100px;
     cursor: pointer;
+    box-shadow: 10px 10px 20px 5px #d0d0d6;
 }
 
 ul {
@@ -116,7 +119,17 @@ ul button {
     text-decoration: line-through; 
 }
 
+@media screen and (max-width: 600px){
+    body {
+        width: auto;
+        margin: 0 5px;
+}
 
+ul li {
+    width: 300px;
+    margin: 20px;
+}
+}
 
 
 
