@@ -11,7 +11,7 @@
 
 ## Descrição do Projeto 
 
-Lista de tarefas diárias que possibilita o usuário a listar suas atividades, marca-las como feitas e excluí-las. 
+Lista de tarefas diária que possibilita o usuário a listar suas atividades, marca-las como feitas e excluí-las. 
 
 URL: https://to-do-list-nine-iota.vercel.app/
 
